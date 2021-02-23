@@ -1,0 +1,29 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Compañia{
+-idCentrales : numeric
+}
+
+class Edificios{
+-idEdificios : numeric
+-idCentrales : numeric
+-tiposDeAlarma : numeric
+}
+class TiposDeAlarma{
++AlarmaFuego
++AlarmaRobo
+}
+class AlarmaFuego{
+llamarPolicia()
+llamarBomberos()
+}
+class AlarmaRobo{
+llamarPolicia()
+}
+
+Compañia "1" --> "1..*" Edificios : instalada alarma
+Edificios "1..n" --> "0..2" TiposDeAlarma : instalado
+
+
+@enduml

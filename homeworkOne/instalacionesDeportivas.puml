@@ -1,0 +1,42 @@
+@startuml
+'https://plantuml.com/class-diagram
+left to right direction
+
+class Reservas{
+InstalacionesDeportivas
+Fecha
+}
+
+class InstalacionesDeportivas{
+-piscinas
+-frontones
+-gimnasios
+-pistas de tenis
+}
+
+class Socios{
+-nombre
+-dirección
+-ciudad
+-provincia
+-teléfono
+-cuota
+-reservar()
+}
+
+class Artículos{
+-balones
+-redes
+-raquetas
+}
+
+class Fecha{
+-hora de entrada
+-hora de salida
+}
+
+Socios "0..*" -- "0..*" Reservas
+Reservas "1" -- "1" InstalacionesDeportivas
+InstalacionesDeportivas "1" -- "0..n" Artículos
+Reservas "1" -- "1" Fecha
+@enduml

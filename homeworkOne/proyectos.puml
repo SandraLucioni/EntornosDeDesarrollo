@@ -1,0 +1,57 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Proyecto{
+-nombre : String
+- / avance : Float
+}
+class Ejecutable{
+-bytes
+}
+class Ciclo{
+-tipo : TipoFase
+}
+class TipoFase{
+inicio
+elaboracion
+contruccion
+transicion
+}
+class Iteracion{
+-comienzo : Date
+}
+class Artefacto{
+
+}
+class Documento{
+-nombre : String
+-ubicacion
+}
+class Software{
+-bytes
+}
+class Actividad{
+-duracion : Integer
+-avance : Float
+}
+class Recurso{
++Humano
++Material
+}
+class humano{
+-nombre : String
+}
+class material{
+-inventario : String
+}
+
+Proyecto o-- "1..*"Ciclo : {ordered}
+Ciclo -- Ejecutable
+Ciclo o-- "1..*" Iteracion : {ordered}
+Iteracion -- "1..*" Artefacto : produce
+(Documento, Software) --|> Artefacto
+Iteracion o-- "1..*" Actividad
+Actividad"0..*" o-- "0..*" Recurso
+(humano, material) --|> Recurso
+
+@enduml

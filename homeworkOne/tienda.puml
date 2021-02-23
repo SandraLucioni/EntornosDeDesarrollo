@@ -1,0 +1,29 @@
+@startuml tienda
+'https://plantuml.com/es/use-case-diagram
+'En una tienda, un comerciante dispone de un sistema para gestionar su almacén.
+'El sistema incluye las siguientes funciones:
+'•Gestión de archivo de proveedores.
+'•Posibilidad de agregar un nuevo artículo (en este caso, el archivo de proveedores se actualiza automáticamente. Si el proveedor no existe, se puede crear).
+'•Gestión del inventario. Desde esta pantalla, se tiene la opción de imprimir el inventario, eliminar un artículo o editar el archivo de artículos).
+left to right direction
+skinparam packageStyle rectangle
+
+actor Comerciante
+
+rectangle Gestion_de_inventario {
+
+Comerciante -- (Archivo_Proveedores)
+    (Archivo_Proveedores) --> (agregar proveedor)
+    (Archivo_Proveedores) --> (lista articulos proveedor)
+Comerciante -- (Gestion_inventario)
+    (Gestion_inventario) --> (imprimir)
+    (Gestion_inventario) --> (articulos)
+        (articulos) --> (agregar articulo)
+        (articulos) --> (eliminar)
+        (articulos) --> (editar)
+
+(agregar articulo) ..> (agregar proveedor) : <<extend>>
+
+}
+
+@enduml

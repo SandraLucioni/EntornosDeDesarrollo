@@ -1,0 +1,43 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Persona{
++dni
++nombre
++direccioon
++estado civil
++matricularse()
+}
+class Estudiante{
++matricular()
++nuevoEstudiante()
++listadoAlumnos()
+}
+class Asignaturas{
++codigo
++nombre
++codprofesor
++curso asignado
++examenes()
++darDeAltaAsignatura()
++nuevaMatriculacion()
++listadoAsignatura()
+}
+class Beca{
++nuevoCodigo
++importe
++cambiarEstadoAlumnoBeca()
++finalizarEstadoAlumnoBeca()
+}
+
+class Examen {
++registrarNotas()
++accederAlListadoNotas()
+}
+
+Persona -- Estudiante
+Estudiante --> Beca
+Estudiante --> Asignaturas
+Asignaturas -- Examen
+
+@enduml

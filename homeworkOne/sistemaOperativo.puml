@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Directorio{
+}
+class Usuario{
+autorizado()
+}
+
+Directorio "1" -- "1..n*"Directorio
+Directorio "1..*" -- "1..*" Usuario : posee propietario
+Usuario "1" -- "1..n" Usuario : autorizado
+
+@enduml

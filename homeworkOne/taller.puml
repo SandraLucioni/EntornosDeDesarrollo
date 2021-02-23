@@ -1,0 +1,21 @@
+
+@startuml taller
+'https://plantuml.com/es/use-case-diagram
+
+left to right direction
+skinparam packageStyle rectangle
+
+Cliente <|- Mecánico
+Cliente <|-- Gerente
+Cliente <|- Operador
+
+rectangle Sistema_vehiculo {
+    Operador -- (Introducir vehículo de cliente)
+    (Informe: Detectar problema) .up.> (Introducir vehículo de cliente) : <<extend>>
+    Mecánico -- (Reparar vehículo)
+    (Reparar vehículo) ..> (Actualizar coste) : <<include>>
+    Gerente -- (Efectuar cobro)
+    (Efectuar cobro) ..> (Actualizar coste) : <<include>>
+}
+@enduml
+
