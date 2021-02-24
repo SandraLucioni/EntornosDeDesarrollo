@@ -13,14 +13,14 @@ actor Comerciante
 rectangle Gestion_de_inventario {
 
 Comerciante -- (Archivo_Proveedores)
-    (Archivo_Proveedores) --> (agregar proveedor)
-    (Archivo_Proveedores) --> (lista articulos proveedor)
+    (Archivo_Proveedores) .. (agregar proveedor) : <<include>>
+    (Archivo_Proveedores) .. (lista articulos proveedor) : <<extend>>
 Comerciante -- (Gestion_inventario)
     (Gestion_inventario) --> (imprimir)
     (Gestion_inventario) --> (articulos)
-        (articulos) --> (agregar articulo)
-        (articulos) --> (eliminar)
-        (articulos) --> (editar)
+        (articulos) .. (agregar articulo): <<extend>>
+        (articulos) .. (eliminar): <<extend>>
+        (articulos) .. (editar): <<extend>>
 
 (agregar articulo) ..> (agregar proveedor) : <<extend>>
 

@@ -195,10 +195,11 @@ La aplicación necesita mostrar los datos de empleados y clientes.
 **Solución propuesta:**
 
 ~~~
-@startuml tienda
-'https://plantuml.com/class-diagram
+@startuml taller
+'https://plantuml.com/es/use-case-diagram
 
-skinparam classAttributeIconSize 0
+left to right direction
+skinparam packageStyle rectangle
 
 Persona <|-- Empleado
 Persona <|-- Cliente
@@ -239,10 +240,11 @@ class Empresa {
 
 **Vista previa:**
 ```plantuml
-@startuml tienda
-'https://plantuml.com/class-diagram
+@startuml taller
+'https://plantuml.com/es/use-case-diagram
 
-skinparam classAttributeIconSize 0
+left to right direction
+skinparam packageStyle rectangle
 
 Persona <|-- Empleado
 Persona <|-- Cliente
@@ -296,10 +298,11 @@ sin posibilidad de coger un nuevo libro.
 
 **Solución propuesta:**
 ~~~
-@startuml
-'https://plantuml.com/class-diagram
+@startuml taller
+'https://plantuml.com/es/use-case-diagram
 
 left to right direction
+skinparam packageStyle rectangle
 
 Libro -- Copia
 Copia -- Lectores
@@ -370,10 +373,11 @@ Libro "1..*" - Autores
 
 **Vista previa:**
 ```plantuml
-@startuml
-'https://plantuml.com/class-diagram
+@startuml taller
+'https://plantuml.com/es/use-case-diagram
 
 left to right direction
+skinparam packageStyle rectangle
 
 Libro -- Copia
 Copia -- Lectores
@@ -456,8 +460,11 @@ necesario conocer el nombre, apellidos y edad del pasajero.
 
 **Solución propuesta:**
 ~~~
-@startuml
-'https://plantuml.com/class-diagram
+@startuml taller
+'https://plantuml.com/es/use-case-diagram
+
+left to right direction
+skinparam packageStyle rectangle
 
 class Vuelo {
 -plazas : Integer
@@ -488,8 +495,11 @@ Billete -- Pasajero
 
 **Vista previa:**
 ```plantuml
-@startuml
-'https://plantuml.com/class-diagram
+@startuml taller
+'https://plantuml.com/es/use-case-diagram
+
+left to right direction
+skinparam packageStyle rectangle
 
 class Vuelo {
 -plazas : Integer
@@ -533,8 +543,11 @@ de pruebas, software).
 
 **Solución propuesta:**
 ~~~
-@startuml
-'https://plantuml.com/class-diagram
+@startuml taller
+'https://plantuml.com/es/use-case-diagram
+
+left to right direction
+skinparam packageStyle rectangle
 
 class Proyecto{
 -nombre : String
@@ -594,8 +607,11 @@ Actividad"0..*" o-- "0..*" Recurso
 
 **Vista previa:**
 ```plantuml
-@startuml
-'https://plantuml.com/class-diagram
+@startuml taller
+'https://plantuml.com/es/use-case-diagram
+
+left to right direction
+skinparam packageStyle rectangle
 
 class Proyecto{
 -nombre : String
@@ -666,9 +682,11 @@ una instalación polideportiva y si lo necesito, las raquetas.
 
 **Solución propuesta:**
 ~~~
-@startuml
-'https://plantuml.com/class-diagram
+@startuml taller
+'https://plantuml.com/es/use-case-diagram
+
 left to right direction
+skinparam packageStyle rectangle
 
 class Reservas{
 InstalacionesDeportivas
@@ -712,9 +730,11 @@ Reservas "1" -- "1" Fecha
 
 **Vista previa:**
 ```plantuml
-@startuml
-'https://plantuml.com/class-diagram
+@startuml taller
+'https://plantuml.com/es/use-case-diagram
+
 left to right direction
+skinparam packageStyle rectangle
 
 class Reservas{
 InstalacionesDeportivas
@@ -764,8 +784,11 @@ para utilizar el directorio.
 
 **Solución propuesta:**
 ~~~
-@startuml
-'https://plantuml.com/class-diagram
+@startuml taller
+'https://plantuml.com/es/use-case-diagram
+
+left to right direction
+skinparam packageStyle rectangle
 
 class Directorio{
 }
@@ -782,8 +805,11 @@ Usuario "1" -- "1..n" Usuario : autorizado
 
 **Vista previa:**
 ```plantuml
-@startuml
-'https://plantuml.com/class-diagram
+@startuml taller
+'https://plantuml.com/es/use-case-diagram
+
+left to right direction
+skinparam packageStyle rectangle
 
 class Directorio{
 }
@@ -808,8 +834,11 @@ mientras que si se activa un sensor de robo se avisa únicamente a la policía
 
 **Solución propuesta:**
 ~~~
-@startuml
-'https://plantuml.com/class-diagram
+@startuml taller
+'https://plantuml.com/es/use-case-diagram
+
+left to right direction
+skinparam packageStyle rectangle
 
 class Compañia{
 -idCentrales : numeric
@@ -841,8 +870,11 @@ Edificios "1..n" --> "0..2" TiposDeAlarma : instalado
 
 **Vista previa:**
 ```plantuml
-@startuml
-'https://plantuml.com/class-diagram
+@startuml taller
+'https://plantuml.com/es/use-case-diagram
+
+left to right direction
+skinparam packageStyle rectangle
 
 class Compañia{
 -idCentrales : numeric
@@ -891,8 +923,11 @@ asignatura (actas).
 
 **Solución propuesta:**
 ~~~
-@startuml
-'https://plantuml.com/class-diagram
+@startuml taller
+'https://plantuml.com/es/use-case-diagram
+
+left to right direction
+skinparam packageStyle rectangle
 
 class Persona{
 +dni
@@ -938,8 +973,11 @@ Asignaturas -- Examen
 
 **Vista previa:**
 ```plantuml
-@startuml
-'https://plantuml.com/class-diagram
+@startuml taller
+'https://plantuml.com/es/use-case-diagram
+
+left to right direction
+skinparam packageStyle rectangle
 
 class Persona{
 +dni
