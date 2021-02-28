@@ -607,4 +607,4 @@ Asignaturas -- Examen
 
 **Vista previa:**
 
-![Diagrama universidad](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/puml/universidad.puml?token=ARMOT5ODPO4GXHY3TC2RRCTAHO6VU)
+![Diagrama universidad](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/puml/universidad.puml?token=ARMOT5IPFFHOUJR7O4ELQ7LAHO7NW)
