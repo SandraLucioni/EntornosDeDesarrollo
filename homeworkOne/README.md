@@ -456,7 +456,7 @@ Reservas "1" -- "1" Fecha
 ~~~
 
 **Vista previa:**
-![Diagrama instalaciones_deportivas](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/puml/instalacionesDeportivas.puml?token=ARMOT5P5GFU7737L2UTMQN3AHO6FI)
+![Diagrama instalaciones_deportivas](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/puml/instalacionesDeportivas.puml?token=ARMOT5O2NSWLBPIEWYGE7OLAHO7GY)
 
 
 ## Ejercicio 6. Sistema operativo
@@ -535,7 +535,7 @@ Edificios "1..n" --> "0..2" TiposDeAlarma : instalado
 ~~~
 
 **Vista previa:**
-![Diagrama compania_de_seguridad](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/puml/companiaDeSeguridad.puml?token=ARMOT5OGAOLS5FXN3NJ2RVLAHO56Y)
+![Diagrama compania_de_seguridad](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/puml/companiaDeSeguridad.puml?token=ARMOT5N7O7QE7RG2NANVMNDAHO7CS)
 
 
 ## Ejercicio 8. Universidad
