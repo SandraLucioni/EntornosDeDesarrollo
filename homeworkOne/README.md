@@ -174,7 +174,7 @@ class Empresa {
 ~~~
 
 **Vista previa:**
-![Diagrama empresa](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/puml/empresa.puml?token=ARMOT5I4B7VJGJF2EEWNCJLAHO5JI)
+![Diagrama empresa](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/puml/empresa.puml?token=ARMOT5I7BNI3T5TGVZ4HM3LAHO7T2)
 
 
 ### Ejercicio 2. Biblioteca
