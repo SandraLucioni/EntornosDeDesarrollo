@@ -34,7 +34,7 @@ rectangle Sistema {
 El código anterior se mostraría así en el documento:
 
 
-![Diagrama taller](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/taller.puml?token=ARMOT5IYPHEIYMYUK4U3XL3AHOD36)
+![Diagrama taller](https://github.com/SandraLucioni/EntornosDeDesarrollo/blob/master/homeworkOne/taller.puml)
 
 ### Ejercicio 2. Tienda
 En una tienda, un comerciante dispone de un sistema para gestionar su almacén. El sistema incluye las siguientes funciones:
@@ -71,7 +71,7 @@ Administrador -- (Buscar)
 
 **Vista previa:**
 
-![Diagrama tienda](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/tienda.puml?token=ARMOT5M3K6WW757WL7SHKV3AHOD5K)
+![Diagrama tienda](https://github.com/SandraLucioni/EntornosDeDesarrollo/blob/master/homeworkOne/tienda.puml)
 
 ### Ejercicio 3. Gestión de proyectos
 
@@ -115,7 +115,7 @@ Administrador -- (Buscar)
 
 **Vista previa:**
 
-![Diagrama gestion_de_proyectos](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/gestionDeProyectos.puml?token=ARMOT5ISF2MM5MQ2AYCCZ43AHODSU)
+![Diagrama gestion_de_proyectos](https://github.com/SandraLucioni/EntornosDeDesarrollo/blob/master/homeworkOne/gestionDeProyectos.puml)
 
 
 ## Hoja 2. Diagramas de clases
@@ -177,7 +177,7 @@ class Empresa {
 
 **Vista previa:**
 
-![Diagrama empresa](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/empresa.puml?token=ARMOT5J2IHUZVOYOIQP747DAHODCE)
+![Diagrama empresa](https://github.com/SandraLucioni/EntornosDeDesarrollo/blob/master/homeworkOne/empresa.puml)
 
 
 
@@ -267,7 +267,7 @@ Libro "1..*" - Autores
 
 **Vista previa:**
 
-![Diagrama biblioteca](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/biblioteca.puml?token=ARMOT5J2IHUZVOYOIQP747DAHODCE)
+![Diagrama biblioteca](https://github.com/SandraLucioni/EntornosDeDesarrollo/blob/master/homeworkOne/biblioteca.puml)
 
 
 ## Ejercicio 3. Viajes
@@ -318,7 +318,7 @@ Billete -- Pasajero
 
 **Vista previa:**
 
-![Diagrama viajes](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/viajes.puml?token=ARMOT5MHRJUQVYOXF5QKGELAHOED4)
+![Diagrama viajes](https://github.com/SandraLucioni/EntornosDeDesarrollo/blob/master/homeworkOne/viajes.puml)
 
 
 ## Ejercicio 4. Proyectos
@@ -400,7 +400,7 @@ Actividad"0..*" o-- "0..*" Recurso
 
 **Vista previa:**
 
-![Diagrama proyectos](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/proyectos.puml?token=ARMOT5OYTIEHQCR5PMY4OI3AHODYO)
+![Diagrama proyectos](https://github.com/SandraLucioni/EntornosDeDesarrollo/blob/master/homeworkOne/proyectos.puml)
 
 
 ## Ejercicio 5. Instalaciones deportivas
@@ -464,7 +464,7 @@ Reservas "1" -- "1" Fecha
 
 **Vista previa:**
 
-![Diagrama instalaciones_deportivas](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/instalacionesDeportivas.puml?token=ARMOT5M5TH4OHBYFJMTNBR3AHODVY)
+![Diagrama instalaciones_deportivas](https://github.com/SandraLucioni/EntornosDeDesarrollo/blob/master/homeworkOne/instalacionesDeportivas.puml)
 
 
 ## Ejercicio 6. Sistema operativo
@@ -496,7 +496,7 @@ Usuario "1" -- "1..n" Usuario : autorizado
 
 **Vista previa:**
 
-![Diagrama sistema_operativo](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/sistemaOperativo.puml?token=ARMOT5KCKATIINEO6B6GEWLAHOD2C)
+![Diagrama sistema_operativo](https://github.com/SandraLucioni/EntornosDeDesarrollo/blob/master/homeworkOne/sistemaOperativo.puml)
 
 
 ## Ejercicio 7. Compañía de seguridad
@@ -545,7 +545,7 @@ Edificios "1..n" --> "0..2" TiposDeAlarma : instalado
 
 **Vista previa:**
 
-![Diagrama compañia_de_seguridad](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/compa%C3%B1iaDeSeguridad.puml?token=ARMOT5NZWLVHPFROB5NEJK3AHODQS)
+![Diagrama compañia_de_seguridad](https://github.com/SandraLucioni/EntornosDeDesarrollo/blob/master/homeworkOne/compa%C3%B1iaDeSeguridad.puml)
 
 
 ## Ejercicio 8. Universidad
@@ -617,5 +617,5 @@ Asignaturas -- Examen
 
 **Vista previa:**
 
-![Diagrama universidad](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/universidad.puml?token=ARMOT5JXRITXHKU6PPVRTQ3AHOD64)
+![Diagrama universidad](https://github.com/SandraLucioni/EntornosDeDesarrollo/blob/master/homeworkOne/universidad.puml)
 
