@@ -113,7 +113,7 @@ Administrador -- (Buscar)
 ~~~
 
 **Vista previa:**
-![Diagrama gestion_de_proyectos](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/puml/gestionDeProyectos.puml?token=ARMOT5P3ZJBGGMBKKLV5AWTAHOZ7A)
+![Diagrama gestion_de_proyectos](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/puml/gestionDeProyectos.puml?token=ARMOT5IO5GTWIVPQ6QZGLKLAHO5QS)
 
 
 ## Hoja 2. Diagramas de clases
