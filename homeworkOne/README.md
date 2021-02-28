@@ -32,7 +32,8 @@ rectangle Sistema {
 
 **Vista previa:**
 El código anterior se mostraría así en el documento:
-![Diagrama taller](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/puml/taller.puml?token=ARMOT5ODNCTTTKRORPX46QTAHPACY)
+
+![Diagrama taller](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/puml/taller.puml)
 
 
 ### Ejercicio 2. Tienda
