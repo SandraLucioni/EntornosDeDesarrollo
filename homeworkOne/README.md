@@ -312,7 +312,7 @@ Billete -- Pasajero
 ~~~
 
 **Vista previa:**
-![Diagrama viajes](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/puml/viajes.puml?token=ARMOT5LQM5F53LVQ2VYAPTDAHO6XS)
+![Diagrama viajes](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/puml/viajes.puml?token=ARMOT5JYVPZ5ZUICSNZVXITAHPALO)
 
 
 ## Ejercicio 4. Proyectos
