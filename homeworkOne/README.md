@@ -34,7 +34,7 @@ rectangle Sistema {
 El código anterior se mostraría así en el documento:
 
 
-![Diagrama taller](homeworkOne/puml/taller.puml)
+![Diagrama taller](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/taller.puml?token=ARMOT5IYPHEIYMYUK4U3XL3AHOD36)
 
 ### Ejercicio 2. Tienda
 En una tienda, un comerciante dispone de un sistema para gestionar su almacén. El sistema incluye las siguientes funciones:
@@ -71,7 +71,7 @@ Administrador -- (Buscar)
 
 **Vista previa:**
 
-![Diagrama tienda](puml/tienda.puml)
+![Diagrama tienda](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/tienda.puml?token=ARMOT5M3K6WW757WL7SHKV3AHOD5K)
 
 ### Ejercicio 3. Gestión de proyectos
 
@@ -115,7 +115,7 @@ Administrador -- (Buscar)
 
 **Vista previa:**
 
-![Diagrama gestion_de_proyectos](/homeworkOne/puml/gestionDeProyectos.puml)
+![Diagrama gestion_de_proyectos](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/gestionDeProyectos.puml?token=ARMOT5ISF2MM5MQ2AYCCZ43AHODSU)
 
 
 ## Hoja 2. Diagramas de clases
@@ -177,7 +177,7 @@ class Empresa {
 
 **Vista previa:**
 
-![Diagrama empresa](homeworkOne/puml/empresa.puml)
+![Diagrama empresa](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/empresa.puml?token=ARMOT5J2IHUZVOYOIQP747DAHODCE)
 
 
 
@@ -267,7 +267,7 @@ Libro "1..*" - Autores
 
 **Vista previa:**
 
-![Diagrama biblioteca](homeworkOne/puml/biblioteca.puml)
+![Diagrama biblioteca](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/biblioteca.puml?token=ARMOT5J2IHUZVOYOIQP747DAHODCE)
 
 
 ## Ejercicio 3. Viajes
@@ -318,7 +318,7 @@ Billete -- Pasajero
 
 **Vista previa:**
 
-![Diagrama viajes](homeworkOne/puml/viajes.puml)
+![Diagrama viajes](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/viajes.puml?token=ARMOT5MHRJUQVYOXF5QKGELAHOED4)
 
 
 ## Ejercicio 4. Proyectos
@@ -400,7 +400,7 @@ Actividad"0..*" o-- "0..*" Recurso
 
 **Vista previa:**
 
-![Diagrama proyectos](homeworkOne/puml/proyectos.puml)
+![Diagrama proyectos](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/proyectos.puml?token=ARMOT5OYTIEHQCR5PMY4OI3AHODYO)
 
 
 ## Ejercicio 5. Instalaciones deportivas
@@ -464,7 +464,7 @@ Reservas "1" -- "1" Fecha
 
 **Vista previa:**
 
-![Diagrama instalaciones_deportivas](https://github.com/SandraLucioni/EntornosDeDesarrollo/blob/master/homeworkOne/instalacionesDeportivas.puml)
+![Diagrama instalaciones_deportivas](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/instalacionesDeportivas.puml?token=ARMOT5M5TH4OHBYFJMTNBR3AHODVY)
 
 
 ## Ejercicio 6. Sistema operativo
@@ -496,7 +496,7 @@ Usuario "1" -- "1..n" Usuario : autorizado
 
 **Vista previa:**
 
-![Diagrama sistema_operativo](https://github.com/SandraLucioni/EntornosDeDesarrollo/blob/master/homeworkOne/sistemaOperativo.puml)
+![Diagrama sistema_operativo](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/sistemaOperativo.puml?token=ARMOT5KCKATIINEO6B6GEWLAHOD2C)
 
 
 ## Ejercicio 7. Compañía de seguridad
@@ -545,7 +545,7 @@ Edificios "1..n" --> "0..2" TiposDeAlarma : instalado
 
 **Vista previa:**
 
-![Diagrama compañia_de_seguridad](https://github.com/SandraLucioni/EntornosDeDesarrollo/blob/master/homeworkOne/compa%C3%B1iaDeSeguridad.puml)
+![Diagrama compañia_de_seguridad](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/compa%C3%B1iaDeSeguridad.puml?token=ARMOT5NZWLVHPFROB5NEJK3AHODQS)
 
 
 ## Ejercicio 8. Universidad
@@ -617,5 +617,18 @@ Asignaturas -- Examen
 
 **Vista previa:**
 
-![Diagrama universidad](https://github.com/SandraLucioni/EntornosDeDesarrollo/blob/master/homeworkOne/universidad.puml)
+![Diagrama universidad](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/universidad.puml?token=ARMOT5JXRITXHKU6PPVRTQ3AHOD64)
 
+
+
+![Diagrama biblioteca](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/puml/biblioteca.puml?token=ARMOT5JSJUVFHFWGNHTT77TAHOWF2)
+![Diagrama compañia_de_seguridad](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/compa%C3%B1iaDeSeguridad.puml?token=ARMOT5NZWLVHPFROB5NEJK3AHODQS)
+![Diagrama gestion_de_proyectos](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/puml/gestionDeProyectos.puml?token=ARMOT5ONISQW5MVEO5M42QDAHOWFQ)
+![Diagrama instalaciones_deportivas](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/instalacionesDeportivas.puml?token=ARMOT5M5TH4OHBYFJMTNBR3AHODVY)
+![Diagrama proyectos](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/proyectos.puml?token=ARMOT5OYTIEHQCR5PMY4OI3AHODYO)
+![Diagrama sistema_operativo](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/sistemaOperativo.puml?token=ARMOT5KCKATIINEO6B6GEWLAHOD2C)
+![Diagrama taller](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/taller.puml?token=ARMOT5IYPHEIYMYUK4U3XL3AHOD36)
+![Diagrama tienda](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/puml/tienda.puml?token=ARMOT5LTTI4ZOLCACARS6LTAHOWFC)
+![Diagrama universidad](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/universidad.puml?token=ARMOT5JXRITXHKU6PPVRTQ3AHOD64)
+![Diagrama viajes](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/viajes.puml?token=ARMOT5MHRJUQVYOXF5QKGELAHOED4)
+![Diagrama empresa](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/puml/empresa.puml?token=ARMOT5PZRPQLAEOMPDYOGS3AHOWFW)

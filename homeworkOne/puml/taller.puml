@@ -1,9 +1,8 @@
-
 @startuml taller
 'https://plantuml.com/es/use-case-diagram
 
 left to right direction
-skinparam packageStyle rectangle
+skinparam classAttributeIconSize 0
 
 Cliente <|- Mecánico
 Cliente <|-- Gerente
