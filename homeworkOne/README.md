@@ -69,7 +69,7 @@ Administrador -- (Buscar)
 ~~~
 
 **Vista previa:**
-![Diagrama tienda](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/puml/tienda.puml?token=ARMOT5NOWJE6C6NNI7BNI7DAHO65Y)
+![Diagrama tienda](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/puml/tienda.puml?token=ARMOT5OVTXTINZULBLPCFDTAHPAFA)
 
 
 ### Ejercicio 3. Gestión de proyectos
