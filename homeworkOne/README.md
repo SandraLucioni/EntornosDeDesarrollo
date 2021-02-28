@@ -393,7 +393,7 @@ Actividad"0..*" o-- "0..*" Recurso
 ~~~
 
 **Vista previa:**
-![Diagrama proyectos](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/puml/proyectos.puml?token=ARMOT5PLFIOV7NXXVY7XHVLAHO6PG)
+![Diagrama proyectos](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/puml/proyectos.puml?token=ARMOT5MBISYMOEGADCMCATDAHO76E)
 
 
 ## Ejercicio 5. Instalaciones deportivas
