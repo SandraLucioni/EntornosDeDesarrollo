@@ -34,7 +34,7 @@ rectangle Sistema {
 El código anterior se mostraría así en el documento:
 
 
-![Diagrama taller](https://github.com/SandraLucioni/EntornosDeDesarrollo/blob/master/homeworkOne/taller.puml)
+![Diagrama taller](homeworkOne/puml/taller.puml)
 
 ### Ejercicio 2. Tienda
 En una tienda, un comerciante dispone de un sistema para gestionar su almacén. El sistema incluye las siguientes funciones:
@@ -71,7 +71,7 @@ Administrador -- (Buscar)
 
 **Vista previa:**
 
-![Diagrama tienda](https://github.com/SandraLucioni/EntornosDeDesarrollo/blob/master/homeworkOne/tienda.puml)
+![Diagrama tienda](puml/tienda.puml)
 
 ### Ejercicio 3. Gestión de proyectos
 
@@ -115,7 +115,7 @@ Administrador -- (Buscar)
 
 **Vista previa:**
 
-![Diagrama gestion_de_proyectos](https://github.com/SandraLucioni/EntornosDeDesarrollo/blob/master/homeworkOne/gestionDeProyectos.puml)
+![Diagrama gestion_de_proyectos](/homeworkOne/puml/gestionDeProyectos.puml)
 
 
 ## Hoja 2. Diagramas de clases
@@ -177,7 +177,7 @@ class Empresa {
 
 **Vista previa:**
 
-![Diagrama empresa](https://github.com/SandraLucioni/EntornosDeDesarrollo/blob/master/homeworkOne/empresa.puml)
+![Diagrama empresa](homeworkOne/puml/empresa.puml)
 
 
 
@@ -267,7 +267,7 @@ Libro "1..*" - Autores
 
 **Vista previa:**
 
-![Diagrama biblioteca](https://github.com/SandraLucioni/EntornosDeDesarrollo/blob/master/homeworkOne/biblioteca.puml)
+![Diagrama biblioteca](homeworkOne/puml/biblioteca.puml)
 
 
 ## Ejercicio 3. Viajes
@@ -318,7 +318,7 @@ Billete -- Pasajero
 
 **Vista previa:**
 
-![Diagrama viajes](https://github.com/SandraLucioni/EntornosDeDesarrollo/blob/master/homeworkOne/viajes.puml)
+![Diagrama viajes](homeworkOne/puml/viajes.puml)
 
 
 ## Ejercicio 4. Proyectos
@@ -400,7 +400,7 @@ Actividad"0..*" o-- "0..*" Recurso
 
 **Vista previa:**
 
-![Diagrama proyectos](https://github.com/SandraLucioni/EntornosDeDesarrollo/blob/master/homeworkOne/proyectos.puml)
+![Diagrama proyectos](homeworkOne/puml/proyectos.puml)
 
 
 ## Ejercicio 5. Instalaciones deportivas
