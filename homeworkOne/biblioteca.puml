@@ -1,4 +1,4 @@
-@startuml
+@startuml biblioteca
 'https://plantuml.com/class-diagram
 'Una aplicación necesita tener información sobre una biblioteca. Realiza el diagrama de clases y
  'añade los métodos necesarios para realizar el préstamo y devolución de libros.

@@ -34,25 +34,7 @@ rectangle Sistema {
 El código anterior se mostraría así en el documento:
 
 ```plantuml
-@startuml taller
-'https://plantuml.com/es/use-case-diagram
-
-left to right direction
-skinparam packageStyle rectangle
-
-Empleado <|- Mecánico
-Empleado <|-- Gerente
-Empleado <|- Operador
-
-rectangle Sistema {
-    Operador -- (Introducir vehículo)
-    (Detectar problema) .up.> (Introducir vehículo) : <<extend>>
-    Mecánico -- (Reparar vehículo)
-    (Reparar vehículo) ..> (Actualizar coste) : <<include>>
-    Gerente -- (Efectuar cobro)
-    (Efectuar cobro) ..> (Actualizar coste) : <<include>>
-}
-@enduml
+![Diagrama taller](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/taller.puml?token=ARMOT5IYPHEIYMYUK4U3XL3AHOD36)
 ```
 
 ### Ejercicio 2. Tienda
@@ -90,29 +72,7 @@ Administrador -- (Buscar)
 
 **Vista previa:**
 ```plantuml
-@startuml tienda
-
-'https://plantuml.com/class-diagram
-
-left to right direction
-skinparam packageStyle rectangle
-
-actor Administrador
-
-rectangle  Lista_de_proyectos {
-Administrador -- (Agregar)
-Administrador -- (Buscar)
-    (Buscar) --> (Eliminar)
-    (Buscar) --> (Actualizar)
-        (Actualizar) --> (Cambiar información)
-        (Actualizar) --> (Cambio de recursos)
-    (Cambiar información) --> (Informar)
-    (Cambio de recursos) --> (Informar)
-    (Informar) --> (Crear documento)
-        (Crear documento).up.> (enviar email) : <<include>>
-        (Crear documento).up.> (subir a la web) : <<include>>
-}
-@enduml
+![Diagrama tienda](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/tienda.puml?token=ARMOT5M3K6WW757WL7SHKV3AHOD5K)
 ```
 ### Ejercicio 3. Gestión de proyectos
 
@@ -156,29 +116,7 @@ Administrador -- (Buscar)
 
 **Vista previa:**
 ```plantuml
-@startuml gestion de proyectos
-'https://plantuml.com/class-diagram
-
-left to right direction
-skinparam packageStyle rectangle
-
-actor Administrador
-
-rectangle  Lista_de_proyectos {
-Administrador -- (Agregar)
-Administrador -- (Buscar)
-    (Buscar) --> (Eliminar)
-    (Buscar) --> (Actualizar)
-        (Actualizar) --> (Cambiar información)
-        (Actualizar) --> (Cambio de recursos)
-    (Cambiar información) --> (Informar)
-    (Cambio de recursos) --> (Informar)
-    (Informar) --> (Crear documento)
-        (Crear documento).up.> (enviar email) : <<include>>
-        (Crear documento).up.> (subir a la web) : <<include>>
-}
-
-@enduml
+![Diagrama gestion_de_proyectos](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/gestionDeProyectos.puml?token=ARMOT5ISF2MM5MQ2AYCCZ43AHODSU)
 ```
 
 ## Hoja 2. Diagramas de clases
@@ -195,7 +133,7 @@ La aplicación necesita mostrar los datos de empleados y clientes.
 **Solución propuesta:**
 
 ~~~
-@startuml taller
+@startuml empresa
 'https://plantuml.com/es/use-case-diagram
 
 left to right direction
@@ -240,47 +178,7 @@ class Empresa {
 
 **Vista previa:**
 ```plantuml
-@startuml taller
-'https://plantuml.com/es/use-case-diagram
-
-left to right direction
-skinparam packageStyle rectangle
-
-Persona <|-- Empleado
-Persona <|-- Cliente
-
-Empleado <|-- Directivo
-Empleado "0..*" -- "0..*" Directivo : subordinado
-
-Empleado "1..*" --* "1" Empresa : empleados
-Cliente "0..*" --o "1..*" Empresa : clientes
-
-class Persona {
-    - nombre : String
-    - edad : int
-    + mostrar()
-}
-
-class Empleado {
-    - sueldoBruto : float
-    + mostrar()
-    + calcularSalarioNeto()
-}
-
-class Cliente {
-    - telefono : String
-    + mostrar()
-}
-
-class Directivo {
-    - categoría : int
-    + mostrar()
-}
-
-class Empresa {
-    - nombre : String
-}
-@enduml
+![Diagrama empresa](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/empresa.puml?token=ARMOT5J2IHUZVOYOIQP747DAHODCE)
 ```
 
 
@@ -298,11 +196,8 @@ sin posibilidad de coger un nuevo libro.
 
 **Solución propuesta:**
 ~~~
-@startuml taller
-'https://plantuml.com/es/use-case-diagram
-
+@startuml biblioteca
 left to right direction
-skinparam packageStyle rectangle
 
 Libro -- Copia
 Copia -- Lectores
@@ -372,78 +267,8 @@ Libro "1..*" - Autores
 ~~~
 
 **Vista previa:**
-```plantuml
-@startuml taller
-'https://plantuml.com/es/use-case-diagram
-
-left to right direction
-skinparam packageStyle rectangle
-
-Libro -- Copia
-Copia -- Lectores
-Lectores -- Multa
-Libro -- Autores
-(Copia, Lectores) ... Prestamo
-
-
-class Autores {
--nombre : String
--nacionalidad : String
--fechaNacimiento : Date
-}
-
-class Libro {
-titulo : String
-editorial : String
-year : Integer
-tipo : Genero
-
-}
-
-class Prestamo{
--inicio : Date
--fin : Date
-}
-
-class Lectores{
--numero : Integer
--nombre : String
--direccion : String
--telefono : String
-
-}
-
-class Copia{
--referencia : Integer
--estado : EstadoCopia
-}
-
-class Multa{
--inicio : Date
--fin : Date
-}
-
-enum Genero <<enumeration>> {
-novela
-teatro
-poesia
-ensayo
-}
-
-enum EstadoCopia <<enumeration>>{
-prestado
-retraso
-biblioteca
-reparacion
-}
-
-Multa"0..1" - Lectores
-Copia "0..3" - "0..1" Lectores
-Copia "1..*" - Libro
-Libro "1..*" - Autores
-( Copia, Lectores) ... Prestamo : recibe
-
-@enduml
+```plantuml 
+![Diagrama biblioteca](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/biblioteca.puml?token=ARMOT5J2IHUZVOYOIQP747DAHODCE)
 ```
 
 
@@ -460,7 +285,7 @@ necesario conocer el nombre, apellidos y edad del pasajero.
 
 **Solución propuesta:**
 ~~~
-@startuml taller
+@startuml viajes
 'https://plantuml.com/es/use-case-diagram
 
 left to right direction
@@ -495,37 +320,7 @@ Billete -- Pasajero
 
 **Vista previa:**
 ```plantuml
-@startuml taller
-'https://plantuml.com/es/use-case-diagram
-
-left to right direction
-skinparam packageStyle rectangle
-
-class Vuelo {
--plazas : Integer
--fecha : Date
-}
-class Avion {
--modelo : String
--capacidad : Integer
-}
-class Pasajero {
--nombre : String
--apellidos : String
--fechaNacimiento : Date
-}
-class Billete {
--asiento : Integer
-}
-class Oferta {
-}
-
-Vuelo -- Avion
-Avion -- Billete
-Billete -- Pasajero
-
-
-@enduml
+![Diagrama viajes](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/viajes.puml?token=ARMOT5MHRJUQVYOXF5QKGELAHOED4)
 ```
 
 ## Ejercicio 4. Proyectos
@@ -543,7 +338,7 @@ de pruebas, software).
 
 **Solución propuesta:**
 ~~~
-@startuml taller
+@startuml proyectos
 'https://plantuml.com/es/use-case-diagram
 
 left to right direction
@@ -607,66 +402,7 @@ Actividad"0..*" o-- "0..*" Recurso
 
 **Vista previa:**
 ```plantuml
-@startuml taller
-'https://plantuml.com/es/use-case-diagram
-
-left to right direction
-skinparam packageStyle rectangle
-
-class Proyecto{
--nombre : String
-- / avance : Float
-}
-class Ejecutable{
--bytes
-}
-class Ciclo{
--tipo : TipoFase
-}
-class TipoFase{
-inicio
-elaboracion
-contruccion
-transicion
-}
-class Iteracion{
--comienzo : Date
-}
-class Artefacto{
-
-}
-class Documento{
--nombre : String
--ubicacion
-}
-class Software{
--bytes
-}
-class Actividad{
--duracion : Integer
--avance : Float
-}
-class Recurso{
-+Humano
-+Material
-}
-class humano{
--nombre : String
-}
-class material{
--inventario : String
-}
-
-Proyecto o-- "1..*"Ciclo : {ordered}
-Ciclo -- Ejecutable
-Ciclo o-- "1..*" Iteracion : {ordered}
-Iteracion -- "1..*" Artefacto : produce
-(Documento, Software) --|> Artefacto
-Iteracion o-- "1..*" Actividad
-Actividad"0..*" o-- "0..*" Recurso
-(humano, material) --|> Recurso
-
-@enduml
+![Diagrama proyectos](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/proyectos.puml?token=ARMOT5OYTIEHQCR5PMY4OI3AHODYO)
 ```
 
 ## Ejercicio 5. Instalaciones deportivas
@@ -682,7 +418,7 @@ una instalación polideportiva y si lo necesito, las raquetas.
 
 **Solución propuesta:**
 ~~~
-@startuml taller
+@startuml instalaciones deportivas
 'https://plantuml.com/es/use-case-diagram
 
 left to right direction
@@ -730,50 +466,7 @@ Reservas "1" -- "1" Fecha
 
 **Vista previa:**
 ```plantuml
-@startuml taller
-'https://plantuml.com/es/use-case-diagram
-
-left to right direction
-skinparam packageStyle rectangle
-
-class Reservas{
-InstalacionesDeportivas
-Fecha
-}
-
-class InstalacionesDeportivas{
--piscinas
--frontones
--gimnasios
--pistas de tenis
-}
-
-class Socios{
--nombre
--dirección
--ciudad
--provincia
--teléfono
--cuota
--reservar()
-}
-
-class Artículos{
--balones
--redes
--raquetas
-}
-
-class Fecha{
--hora de entrada
--hora de salida
-}
-
-Socios "0..*" -- "0..*" Reservas
-Reservas "1" -- "1" InstalacionesDeportivas
-InstalacionesDeportivas "1" -- "0..n" Artículos
-Reservas "1" -- "1" Fecha
-@enduml
+![Diagrama instalaciones_deportivas](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/instalacionesDeportivas.puml?token=ARMOT5M5TH4OHBYFJMTNBR3AHODVY)
 ```
 
 ## Ejercicio 6. Sistema operativo
@@ -784,7 +477,7 @@ para utilizar el directorio.
 
 **Solución propuesta:**
 ~~~
-@startuml taller
+@startuml sistema operativo
 'https://plantuml.com/es/use-case-diagram
 
 left to right direction
@@ -805,23 +498,7 @@ Usuario "1" -- "1..n" Usuario : autorizado
 
 **Vista previa:**
 ```plantuml
-@startuml taller
-'https://plantuml.com/es/use-case-diagram
-
-left to right direction
-skinparam packageStyle rectangle
-
-class Directorio{
-}
-class Usuario{
-autorizado()
-}
-
-Directorio "1" -- "1..n*"Directorio
-Directorio "1..*" -- "1..*" Usuario : posee propietario
-Usuario "1" -- "1..n" Usuario : autorizado
-
-@enduml
+![Diagrama sistema_operativo](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/sistemaOperativo.puml?token=ARMOT5KCKATIINEO6B6GEWLAHOD2C)
 ```
 
 ## Ejercicio 7. Compañía de seguridad
@@ -834,7 +511,7 @@ mientras que si se activa un sensor de robo se avisa únicamente a la policía
 
 **Solución propuesta:**
 ~~~
-@startuml taller
+@startuml compania de seguridad
 'https://plantuml.com/es/use-case-diagram
 
 left to right direction
@@ -870,38 +547,7 @@ Edificios "1..n" --> "0..2" TiposDeAlarma : instalado
 
 **Vista previa:**
 ```plantuml
-@startuml taller
-'https://plantuml.com/es/use-case-diagram
-
-left to right direction
-skinparam packageStyle rectangle
-
-class Compañia{
--idCentrales : numeric
-}
-
-class Edificios{
--idEdificios : numeric
--idCentrales : numeric
--tiposDeAlarma : numeric
-}
-class TiposDeAlarma{
-+AlarmaFuego
-+AlarmaRobo
-}
-class AlarmaFuego{
-llamarPolicia()
-llamarBomberos()
-}
-class AlarmaRobo{
-llamarPolicia()
-}
-
-Compañia "1" --> "1..*" Edificios : instalada alarma
-Edificios "1..n" --> "0..2" TiposDeAlarma : instalado
-
-
-@enduml
+![Diagrama compañia_de_seguridad](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/compa%C3%B1iaDeSeguridad.puml?token=ARMOT5NZWLVHPFROB5NEJK3AHODQS)
 ```
 
 ## Ejercicio 8. Universidad
@@ -923,7 +569,7 @@ asignatura (actas).
 
 **Solución propuesta:**
 ~~~
-@startuml taller
+@startuml universidad
 'https://plantuml.com/es/use-case-diagram
 
 left to right direction
@@ -973,50 +619,18 @@ Asignaturas -- Examen
 
 **Vista previa:**
 ```plantuml
-@startuml taller
-'https://plantuml.com/es/use-case-diagram
-
-left to right direction
-skinparam packageStyle rectangle
-
-class Persona{
-+dni
-+nombre
-+direccioon
-+estado civil
-+matricularse()
-}
-class Estudiante{
-+matricular()
-+nuevoEstudiante()
-+listadoAlumnos()
-}
-class Asignaturas{
-+codigo
-+nombre
-+codprofesor
-+curso asignado
-+examenes()
-+darDeAltaAsignatura()
-+nuevaMatriculacion()
-+listadoAsignatura()
-}
-class Beca{
-+nuevoCodigo
-+importe
-+cambiarEstadoAlumnoBeca()
-+finalizarEstadoAlumnoBeca()
-}
-
-class Examen {
-+registrarNotas()
-+accederAlListadoNotas()
-}
-
-Persona -- Estudiante
-Estudiante --> Beca
-Estudiante --> Asignaturas
-Asignaturas -- Examen
-
-@enduml
+![Diagrama universidad](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/universidad.puml?token=ARMOT5JXRITXHKU6PPVRTQ3AHOD64)
 ```
+
+
+//![Diagrama biblioteca](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/biblioteca.puml?token=ARMOT5J2IHUZVOYOIQP747DAHODCE)
+//![Diagrama compañia_de_seguridad](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/compa%C3%B1iaDeSeguridad.puml?token=ARMOT5NZWLVHPFROB5NEJK3AHODQS)
+//![Diagrama gestion_de_proyectos](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/gestionDeProyectos.puml?token=ARMOT5ISF2MM5MQ2AYCCZ43AHODSU)
+//![Diagrama instalaciones_deportivas](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/instalacionesDeportivas.puml?token=ARMOT5M5TH4OHBYFJMTNBR3AHODVY)
+//![Diagrama proyectos](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/proyectos.puml?token=ARMOT5OYTIEHQCR5PMY4OI3AHODYO)
+//![Diagrama sistema_operativo](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/sistemaOperativo.puml?token=ARMOT5KCKATIINEO6B6GEWLAHOD2C)
+//![Diagrama taller](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/taller.puml?token=ARMOT5IYPHEIYMYUK4U3XL3AHOD36)
+//![Diagrama tienda](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/tienda.puml?token=ARMOT5M3K6WW757WL7SHKV3AHOD5K)
+//![Diagrama universidad](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/universidad.puml?token=ARMOT5JXRITXHKU6PPVRTQ3AHOD64)
+//![Diagrama viajes](https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/viajes.puml?token=ARMOT5MHRJUQVYOXF5QKGELAHOED4)
+//![Diagrama ]()
