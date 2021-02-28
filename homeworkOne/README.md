@@ -262,7 +262,7 @@ Libro "1..*" - Autores
 ~~~
 
 **Vista previa:**
-![Diagrama biblioteca](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/puml/biblioteca.puml?token=ARMOT5N2VG4GNFNDXVPPTGDAHO7Q2)
+![Diagrama biblioteca](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/SandraLucioni/EntornosDeDesarrollo/master/homeworkOne/puml/biblioteca.puml?token=ARMOT5PTE5GMFXDBKGGQM5DAHPAIU)
 
 
 ## Ejercicio 3. Viajes
